@@ -1,0 +1,190 @@
+/* Reset some default styles */
+body,
+h1,
+h2,
+h3,
+p,
+a {
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+}
+
+/* Body */
+body {
+	background-color: #021033;
+	font-family: Arial, sans-serif;
+}
+
+/* Header */
+header {
+	background-color: #00C853;
+	color: #fff;
+	padding: 2rem 0;
+}
+
+header h1 {
+	font-size: 2.5rem;
+	font-weight: 600;
+}
+
+header p {
+	font-size: 1.25rem;
+	margin-top: 1rem;
+}
+
+/* About Section */
+section {
+	padding: 4rem 0;
+}
+
+section h2 {
+	font-size: 2.5rem;
+	font-weight: 600;
+	margin-bottom: 2rem;
+}
+
+/* About Section - Text Content */
+.flex {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}
+
+
+
+/* About Section - Image */
+img {
+	max-width: 100%;
+	height: auto;
+	border-radius: 0.5rem;
+	box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+/* Tips Section */
+section.bg-green-500 {
+	background-color: #707F7B;
+	color: #fff;
+	padding: 4rem 0;
+	text-align: center;
+}
+
+section.bg-green-500 h2 {
+	font-size: 2.5rem;
+	font-weight: 600;
+	margin-bottom: 2rem;
+}
+
+/* Tips Cards Container */
+.grid {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	/* Center-align the cards horizontally */
+	gap: 2rem;
+	padding: 0 2rem;
+	/* Add horizontal padding for better spacing */
+}
+
+/* Tips Card */
+.bg-white {
+	background-color: #fff;
+	border-radius: 0.5rem;
+	box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+	padding: 2rem;
+	margin-bottom: 2rem;
+	text-align: center;
+	transition: transform 0.3s ease-in-out;
+	width: calc(33.3333% - 4rem);
+	/* Set the width of each card */
+	max-width: 300px;
+	/* Limit the maximum width of each card */
+	flex: 1;
+	/* Distribute available space evenly among cards */
+}
+
+.bg-white:hover {
+	transform: translateY(-5px);
+	/* Add a slight hover effect */
+}
+
+.bg-white h3 {
+	font-size: 1.5rem;
+	font-weight: 600;
+	margin-bottom: 1rem;
+}
+
+.bg-white p {
+	font-size: 1.125rem;
+	color: #777;
+}
+
+/* Call to Action Section */
+section.bg-green-600 {
+	background-color: #021033;
+	color: whitesmoke;
+	text-align: center;
+	padding: 4rem 0;
+}
+
+section.bg-green-600 h2 {
+	font-size: 2.5rem;
+	font-weight: 600;
+	margin-bottom: 1rem;
+}
+
+section.bg-green-600 p {
+	font-size: 1.25rem;
+	margin-bottom: 2rem;
+}
+
+/* Call to Action Button */
+a.bg-yellow-500 {
+	background-color: #FFC107;
+	color: #333;
+	font-size: 1.25rem;
+	font-weight: 600;
+	padding: 1rem 2rem;
+	border-radius: 9999px;
+	text-decoration: none;
+	transition: background-color 0.3s ease-in-out;
+}
+
+a.bg-yellow-500:hover {
+	background-color: #FFD54F;
+}
+
+/* Footer */
+footer {
+	background-color: #333;
+	color: #fff;
+	text-align: center;
+	padding: 2rem 0;
+}
+
+footer p {
+	font-size: 1.125rem;
+}
+
+/* Responsive Layout */
+@media (min-width: 640px) {
+	.md\:flex-row {
+		flex-direction: row;
+	}
+
+
+
+	.md\:mt-0 {
+		margin-top: 0;
+	}
+
+	.md\:mt-8 {
+		margin-top: 2rem;
+	}
+
+	.md\:pr-8 {
+		padding-right: 2rem;
+	}
+}
